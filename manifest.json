@@ -1,0 +1,25 @@
+{
+    "manifest_version": "2",
+    "api_version": "1",
+    "name": "Mailinator",
+    "description": "Generate a fake email address and open it for you in Mailinator website",
+    "developer_name": "Bruno Paz",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.1
+    },
+    "preferences": [
+        {
+            "id": "keyword",
+            "type": "keyword",
+            "name": "Mailinator",
+            "default_value": "mail"
+        },
+        {
+            "id": "prefix",
+            "type": "input",
+            "name": "A prefix to use in the generated emails",
+            "default_value": ""
+        }
+    ]
+}
