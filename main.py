@@ -12,7 +12,7 @@ import random
 logger = logging.getLogger(__name__)
 fake = Faker()
 
-MAILINATOR_URL = "https://www.mailinator.com/v2/inbox.jsp?zone=public&query="
+MAILINATOR_URL = "https://mailinator.com/v3/index.jsp?zone=public&query="
 
 
 class MailinatorExtension(Extension):
