@@ -54,7 +54,7 @@ class KeywordQueryEventListener(EventListener):
                     description=
                     "Press enter to copy to the cliboard. Alt+Enter to open",
                     highlightable=False,
-                    on_enter=CopyToClipboardAction(email),
+                    on_enter=CopyToClipboardAction(email+"@mailinator.com"),
                     on_alt_enter=OpenUrlAction(MAILINATOR_URL % email)))
 
         return RenderResultListAction(items)
