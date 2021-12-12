@@ -12,13 +12,13 @@
 
 * [ulauncher](https://ulauncher.io/)
 * Python >= 3
-* Faker library ```pip3 install faker```
+* Faker library ```pip install faker --user```
 
 ## Install
 
 Open ulauncher preferences window -> extensions -> add extension and paste the following url:
 
-```https://github.com/brpaz/ulauncher-netlify```
+```https://github.com/brpaz/ulauncher-mailinator```
 
 ## Usage
 
@@ -38,11 +38,11 @@ make dev
 
 The `make link` command will symlink the cloned repo into the appropriate location on the ulauncher extensions folder.
 
-The `make dev` command will run ulauncher in Verbose mode without any extension enabled. To start your extension search on the output for something like 
+The `make dev` command will run ulauncher in Verbose mode without any extension enabled. To start your extension search on the output for something like
 
-``` 
+```
 VERBOSE=1 ULAUNCHER_WS_API=ws://127.0.0.1:5054/ulauncher-mailinator PYTHONPATH=/usr/lib/python3/dist-packages /usr/bin/python3 /home/bruno/.cache/ulauncher_cache/extensions/ulauncher-mailinator/main.py
-``` 
+```
 
 and execute the command in another terminal window.
 
@@ -61,7 +61,7 @@ All contributions are welcome. Feel free to open an issue or submit a PR!
 <details><summary>Unexpected API error. when installing the extension</summary>
 <p>
 This error usually means that you have a missing Python dependency, necessary for the extension to run.
-Please check the "requirements.txt" file and install the specified libraries with pip3.
+Please check the "requirements.txt" file and install the specified libraries with pip.
 </p>
 </details>
 
@@ -69,7 +69,7 @@ Please check the "requirements.txt" file and install the specified libraries wit
 
 * [alfred-mailinator](https://github.com/AssafShalin/alfred-mailinator)
 
-## License 
+## License
 
 Copywright @ 2019 [Bruno Paz](https://github.com/brpaz)
 
