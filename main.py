@@ -13,6 +13,7 @@ from ulauncher.api.shared.item.ExtensionResultItem import ExtensionResultItem
 from ulauncher.api.shared.action.RenderResultListAction import RenderResultListAction
 from ulauncher.api.shared.action.CopyToClipboardAction import CopyToClipboardAction
 from ulauncher.api.shared.action.OpenUrlAction import OpenUrlAction
+from ulauncher.api.shared.action.ActionList import ActionList
 from faker import Faker
 
 LOGGER = logging.getLogger(__name__)
@@ -52,10 +53,12 @@ class KeywordQueryEventListener(EventListener):
                     icon='images/icon.png',
                     name="%s@mailinator.com" % email,
                     description=
-                    "Press enter to copy to the cliboard. Alt+Enter to open",
+                    "Press enter to copy to the cliboard. Alt+Enter to copy and open",
                     highlightable=False,
-                    on_enter=CopyToClipboardAction(email+"@mailinator.com"),
-                    on_alt_enter=OpenUrlAction(MAILINATOR_URL % email)))
+                    on_enter=CopyToClipboardAction(email + "@mailinator.com"),
+                    on_alt_enter=ActionList([
+                        OpenUrlAction(MAILINATOR_URL % email),
+                        CopyToClipboardAction(email + "@mailinator.com")])))
 
         return RenderResultListAction(items)
 
