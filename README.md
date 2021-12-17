@@ -24,7 +24,7 @@ Open ulauncher preferences window -> extensions -> add extension and paste the f
 
 Typing ```mailinator``` will trigger the extension and generate a Fake email address.
 
-Enter key will copy the email to the clipboard, while CTRL+Enter will open the respective inbox on Mailinator website.
+Enter key will copy the email to the clipboard, while Alt+Enter will copy and open the respective inbox on Mailinator website.
 
 ## Development
 
